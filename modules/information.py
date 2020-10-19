@@ -291,7 +291,7 @@ class Information(commands.Cog, name = 'Informação'):
 
                     e = discord.Embed(title = f':mag: Pesquisando ```{domain}```', colour = 0x3AFE00, timestamp = datetime.utcnow())
                     if 'domain_name' in response:
-                        if type(response.domain_name) is list:
+                        if isinstance(response.domain_name, list):
                             if len(response.domain_name) == 1:
                                 e.add_field(name = ':satellite: Domínio', value = f'```{response.domain_name}```')
                             else:
@@ -302,7 +302,7 @@ class Information(commands.Cog, name = 'Informação'):
                     if 'whois_server' in response: e.add_field(name = ':desktop: Servidor de Whois', value = f'```{response.whois_server}```')
                     if 'updated_date' in response:
                         cupdate = []
-                        if type(response.updated_date) is list:
+                        if isinstance(response.updated_date, list):
                             for rsp in response.updated_date:
                                 cupdate.append(rsp)
                         if len(cupdate) == 0:
@@ -311,7 +311,7 @@ class Information(commands.Cog, name = 'Informação'):
                             e.add_field(name = ':calendar: Data de atualização', value = f'```{str(response.updated_date[0])}```')
                     if 'creation_date' in response:
                         ccreate = []
-                        if type(response.creation_date) is list:
+                        if isinstance(response.creation_date, list):
                             for rsp in response.creation_date:
                                 ccreate.append(rsp)
                         if len(ccreate) == 0:
@@ -320,7 +320,7 @@ class Information(commands.Cog, name = 'Informação'):
                             e.add_field(name = ':calendar: Data de criação', value = f'```{str(ccreate[0])}```')
                     if 'expiration_date' in response:
                         cexpiration = []
-                        if type(response.expiration_date) is list:
+                        if isinstance(response.expiration_date, list):
                             for rsp in response.expiration_date:
                                 cexpiration.append(rsp)
                         if len(cexpiration) == 0:
