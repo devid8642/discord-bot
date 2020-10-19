@@ -1,0 +1,4 @@
+discord
+Cogs
+wikipedia
+python-whois
