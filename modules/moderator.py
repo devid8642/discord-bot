@@ -33,10 +33,12 @@ class Moderator(commands.Cog, name = 'Moderação'):
                 e.set_footer(icon_url = ctx.author.avatar_url, text = ctx.author.name)
                 await ctx.send(embed = e)
                 await ctx.message.delete()
+                
+                memberName = member
         
         # Console return
         print('\n', f'-'*30)
-        print(f'\n[+] A ban command has been called!\n\nLog: Author: {ctx.author}, Target: {member}')
+        print(f'\n[+] A ban command has been called!\n\nLog: Author: {ctx.author}, Target: {memberName}')
 
     @commands.command()
     @commands.bot_has_permissions(ban_members = True)
@@ -99,10 +101,12 @@ class Moderator(commands.Cog, name = 'Moderação'):
                 e.set_footer(icon_url = ctx.author.avatar_url, text = ctx.author.name)
                 await ctx.send(embed = e)
                 await ctx.message.delete()
+                
+                memberName = member
 
         # Console return
         print('\n', f'-'*30)
-        print(f'\n[+] A kick command has been called!\n\nLog: Author: {ctx.author}, Target: {member}')
+        print(f'\n[+] A kick command has been called!\n\nLog: Author: {ctx.author}, Target: {memberName}')
 
     @commands.command()
     @commands.bot_has_permissions(kick_members = True)
