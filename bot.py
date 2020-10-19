@@ -11,7 +11,7 @@ print(f'\n{"-" * 12}> STARTING BOT <{"-" * 12}')
 
 # Setup
 client = commands.Bot(command_prefix = '!', intents = intents, case_insensitive = True, help_command = None) # Change client prefix in 'command_prefix = '
-token = '' # Put your application Token here
+botToken = '' # Put your application Token here
 
 @client.event
 async def on_ready(): # When the client is started
@@ -37,4 +37,4 @@ for filename in listdir('./modules'):
         print(f'\n[+] Plugin {filename[:-3]} has been loaded.')
 
 # Run client setup
-client.run(token)
+client.run(botToken)
