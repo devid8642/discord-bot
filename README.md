@@ -1,6 +1,6 @@
 # 🤖 Discord-Bot
 
-<img src = "https://i.imgur.com/qyPqPmE.png">
+<img src = "https://i.imgur.com/qyPqPmE.png" width = "800">
 
 [![CodeFactor](https://www.codefactor.io/repository/github/f4ll-py/discord-bot/badge)](https://www.codefactor.io/repository/github/f4ll-py/discord-bot)
 ![LastCommit](https://img.shields.io/github/last-commit/f4ll-py/discord-bot)
