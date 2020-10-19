@@ -18,7 +18,7 @@ class Information(commands.Cog, name = 'Informação'):
 
     @commands.command(aliases = ['pong', 'latency', 'latencia', 'latência'])
     async def ping(self, ctx): # When a user says ping
-        if ctx.channel.name == cmdChannel:
+        if ctx.channel.name == cmdChannel
             # Discord return
             await ctx.message.delete()
             e = discord.Embed(title = ':satellite: Latência', description = f'Minha latência atual é {round(self.client.latency * 1000)}ms, {ctx.author.mention}!', colour = 0x3AFE00, timestamp = datetime.utcnow())
@@ -298,8 +298,10 @@ class Information(commands.Cog, name = 'Informação'):
                                 e.add_field(name = ':satellite: Domínio', value = f'```{response.domain_name[0]}```')
                         else:
                             e.add_field(name = ':satellite: Domínio', value = f'```{response.domain_name}```')
-                    if 'registrar' in response: e.add_field(name = ':pencil: Registrar', value = f'```{response.registrar}```')
-                    if 'whois_server' in response: e.add_field(name = ':desktop: Servidor de Whois', value = f'```{response.whois_server}```')
+                    if 'registrar' in response:
+                        e.add_field(name = ':pencil: Registrar', value = f'```{response.registrar}```')
+                    if 'whois_server' in response:
+                        e.add_field(name = ':desktop: Servidor de Whois', value = f'```{response.whois_server}```')
                     if 'updated_date' in response:
                         cupdate = []
                         if isinstance(response.updated_date, list):
@@ -327,12 +329,18 @@ class Information(commands.Cog, name = 'Informação'):
                             e.add_field(name = ':calendar: Data de expiração', value = f'```{response.expiration_date}```')
                         else:
                             e.add_field(name = ':calendar: Data de expiração', value = f'```{str(response.expiration_date[0])}```')
-                    if 'country' in response: e.add_field(name = ':globe_with_meridians: País', value = f'```{response.country}```')
-                    if 'state' in response: e.add_field(name = ':statue_of_liberty: Estado', value = f'```{response.state}```')
-                    if 'city' in response: e.add_field(name = ':cityscape: Cidade', value = f'```{response.city}```')
-                    if 'address' in response: e.add_field(name = ':office: Endereço', value = f'```{response.address}```')
-                    if 'name' in response: e.add_field(name = ':credit_card: Nome', value = f'```{response.name}```')
-                    if 'org' in response: e.add_field(name = ':busts_in_silhouette: Organização', value = f'```{response.org}```')
+                    if 'country' in response:
+                        e.add_field(name = ':globe_with_meridians: País', value = f'```{response.country}```')
+                    if 'state' in response:
+                        e.add_field(name = ':statue_of_liberty: Estado', value = f'```{response.state}```')
+                    if 'city' in response:
+                        e.add_field(name = ':cityscape: Cidade', value = f'```{response.city}```')
+                    if 'address' in response:
+                        e.add_field(name = ':office: Endereço', value = f'```{response.address}```')
+                    if 'name' in response:
+                        e.add_field(name = ':credit_card: Nome', value = f'```{response.name}```')
+                    if 'org' in response:
+                        e.add_field(name = ':busts_in_silhouette: Organização', value = f'```{response.org}```')
                     e.add_field(name = ':globe_with_meridians: Servidores', value = f'```{name_servers}```')
                     e.set_footer(icon_url = ctx.author.avatar_url, text = ctx.author.name)
                     await message.edit(embed = e)
