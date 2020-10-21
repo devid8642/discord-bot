@@ -1,5 +1,3 @@
-# 🤖 Discord-Bot
-
 <img src = "https://i.imgur.com/qyPqPmE.png" width = "800">
 
 [![CodeFactor](https://www.codefactor.io/repository/github/f4ll-py/discord-bot/badge)](https://www.codefactor.io/repository/github/f4ll-py/discord-bot)
