@@ -1,10 +1,10 @@
 <img src = "https://i.imgur.com/qyPqPmE.png" width = "800">
 
-[![CodeFactor](https://www.codefactor.io/repository/github/f4ll-py/discord-bot/badge)](https://www.codefactor.io/repository/github/f4ll-py/discord-bot)
-![LastCommit](https://img.shields.io/github/last-commit/f4ll-py/discord-bot)
-![Issues](https://img.shields.io/github/issues/f4ll-py/discord-bot)
-![PullRequests](https://img.shields.io/github/issues-pr/f4ll-py/discord-bot)
-![Followers](https://img.shields.io/github/followers/f4ll-py?label=Follow)
+[![CodeFactor](https://www.codefactor.io/repository/github/ff4LL/discord-bot/badge)](https://www.codefactor.io/repository/github/ff4LL/discord-bot)
+![LastCommit](https://img.shields.io/github/last-commit/ff4LL/discord-bot)
+![Issues](https://img.shields.io/github/issues/ff4LL/discord-bot)
+![PullRequests](https://img.shields.io/github/issues-pr/ff4LL/discord-bot)
+![Followers](https://img.shields.io/github/followers/ff4LL?label=Follow)
 
 <br>
 
@@ -20,7 +20,7 @@
 <br><br>
 
 ## ☁️ Download & Install
-  - git clone https://github.com/f4ll-py/discord-bot
+  - git clone https://github.com/ff4LL/discord-bot
   - cd discord-bot
 
 <br><br>
