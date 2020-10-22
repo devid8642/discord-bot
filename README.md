@@ -20,8 +20,18 @@
 <br><br>
 
 ## ☁️ Download & Install
-  - git clone https://github.com/ff4LL/discord-bot
-  - cd discord-bot
+  To install python visit the <a href="https://www.python.org">official website</a>.
+
+  To download the files run:
+  ```bash
+  git clone https://github.com/ff4LL/discord-bot.git
+  cd discord-bot
+  ```
+  Finally, to install the project dependencies, run:
+  
+  ```bash
+  pip install -r requirements.txt
+  ```
 
 <br><br>
 
